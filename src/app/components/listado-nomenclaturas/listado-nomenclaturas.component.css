@@ -1,0 +1,60 @@
+table {
+  width: 100%;
+}
+
+td,
+th {
+  width: 15%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%; /* Cambiado a 100% para que sea responsivo */
+}
+
+.delete {
+  cursor: pointer;
+  color: #E15639;
+}
+
+.edit {
+  cursor: pointer;
+  color: #1878B0;
+}
+
+.search {
+  cursor: pointer;
+}
+
+.agregar {
+  font-size: 10px;
+  line-height: 28px;
+}
+.title {
+  text-align: center;
+   background-color: #f50a0a; /* o el color gris que desees */
+}
+
+.title h1 {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .title h1 {
+    font-size: 18px; /* Tamaño de fuente más pequeño para dispositivos pequeños */
+  }
+}
+
+/* Añadiendo estilos responsivos */
+
+@media only screen and (max-width: 600px) {
+  td,
+  th {
+    width: 100%; /* Cambiado a 100% para que ocupe el ancho completo en dispositivos pequeños */
+  }
+
+  .mat-form-field {
+    width: 100%;
+  }
+}

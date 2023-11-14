@@ -1,0 +1,20 @@
+<div class="title">
+    <h1>Ver Nomenclatura</h1>
+</div>
+<app-spinner *ngIf="loading"></app-spinner>
+<div *ngIf="nomenclatura != null" class="container">
+    <mat-card class="card">
+        <mat-card-title>{{ nomenclatura.nombre_carrera }}</mat-card-title>
+        <mat-card-content>
+            <p><strong>Plan de Carrera:</strong> {{ nomenclatura.plan_carrera }} </p>
+            <p><strong>Código de Título:</strong> {{ nomenclatura.codigo_titulo }} </p>
+            <p><strong>Descripción del Título:</strong> {{ nomenclatura.descripcion_titulo }} </p>
+            <p><strong>Nivel:</strong> {{ nomenclatura.nivel }} </p>
+            <p><strong>Estado:</strong> {{ nomenclatura.estado }} </p>
+            <p><strong>Facultad:</strong> {{ nomenclatura.nombreFacultad }} </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button routerLink="/listNomenclaturas" mat-raised-button>Volver</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
